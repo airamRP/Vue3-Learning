@@ -1,10 +1,13 @@
 <template>
   <h2>Counter</h2>
-  <p>{{ formattedCounter }}</p>
-  <label for="amount">Cantidad </label>
-  <input type="text" v-model.number="amount" />
-  <button @click="increment">+</button>
-  <button @click="decrement">-</button>
+  <div>
+    <span>Counter: {{ formattedCounter }} &nbsp;</span>
+    <button @click="increment">+</button>
+    <button @click="decrement">-</button>
+    <label for="amount">&nbsp;&nbsp;&nbsp;Cantidad </label>
+    <input type="text" v-model.number="amount" />
+  </div>
+  <hr>
 </template>
 
 <script>
@@ -29,6 +32,6 @@ export default {
 <style scoped lang="scss">
 input {
   text-align: right;
-  width: 100px;
+  width: 50px;
 }
 </style>

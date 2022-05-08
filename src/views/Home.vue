@@ -1,16 +1,5 @@
 <template>
   <div class="home">
-    <Counter />
+    <h2>Vue 3. Composition Api. Composables</h2>
   </div>
 </template>
-
-<script>
-import Counter from '@/components/Counter.vue'
-
-export default {
-  name: 'Home',
-  components: {
-    Counter
-  }
-}
-</script>

@@ -1,7 +1,14 @@
 <template>
   <div id="nav">
-    <router-link to="/">Básico</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/counter">Counter</router-link> |
+    <router-link to="/ref">Ref</router-link> |
+    <router-link to="/todos">Events</router-link> |
+    <router-link to="/provide-inject">Provide</router-link> |
+    <router-link to="/state-management">State</router-link> |
+    <router-link to="/mouse">Mouse</router-link> |
+    <router-link to="/fetch">Fetch</router-link> |
+    <router-link to="/about">Todos <small>(composable)</small></router-link> |
   </div>
   <router-view/>
 </template>
@@ -11,7 +18,6 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
@@ -26,6 +32,9 @@
       color: #42b983;
     }
   }
+}
+div {
+  margin: 10px 0 0;
 }
 h3 {
   margin: 40px 0 0;
